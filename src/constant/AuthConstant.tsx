@@ -1,0 +1,9 @@
+export const SET_EMAIL = "SET_EMAIL";
+export const SET_LOADING = "SET_LOADING";
+export const SET_OTP = "SET_OTP";
+export const RESET_OTP = "RESET_OTP";
+export const SET_ROLE = "SET_ROLE";
+export const SET_VENDOR = "SET_VENDOR";
+export const REQUEST_FAIL = "REQUEST_FAIL";
+export const User = "User";
+export const Vendor = "Vendor";

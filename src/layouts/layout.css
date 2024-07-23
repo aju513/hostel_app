@@ -1,0 +1,62 @@
+footer::before {
+  content: "";
+
+  height: 500px;
+  width: 100%;
+  position: absolute;
+  background-color: #3c95d1;
+  transform: skewY(-3deg);
+  top: 10%;
+  z-index: -1;
+}
+/* Small devices (phones, 576px and up) */
+@media (max-width: 575.98px) {
+  footer::before {
+    content: "";
+    height: 1000px;
+    width: 100%;
+    position: absolute;
+    background-color: #3c95d1;
+    transform: skewY(-3deg);
+    top: 10%;
+    z-index: -1;
+  }
+}
+@media (min-width: 576px) {
+  footer::before {
+    content: "";
+    height: 1000px;
+    width: 100%;
+    position: absolute;
+    background-color: #3c95d1;
+    transform: skewY(-3deg);
+    top: 10%;
+    z-index: -1;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  footer::before {
+    content: "";
+    height: 80 0px;
+    width: 100%;
+    position: absolute;
+    background-color: #3c95d1;
+    transform: skewY(-3deg);
+    top: 10%;
+    z-index: -1;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  /* Your CSS styles for large devices here */
+}
+
+.background {
+  background-image: url("../assets/footer/bgimage.png") !important;
+  background-position: center;
+  background-size: 95%;
+  background-repeat: no-repeat;
+}

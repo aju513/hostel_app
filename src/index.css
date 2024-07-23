@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+}
+
+.box-shadow {
+  box-shadow: 1px -1px 23px 2px rgba(171, 171, 171, 0.75);
+  -webkit-box-shadow: 1px -1px 23px 2px rgba(171, 171, 171, 0.75);
+  -moz-box-shadow: 1px -1px 23px 2px rgba(171, 171, 171, 0.75);
+}
+@media (max-width: 1007px) {
+  .box-shadow {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+  }
+}
+
+@media only screen and (min-width: 737px) {
+  .otpInputStyle {
+    width: 40px !important;
+    height: 40px !important;
+  }
+}
+@media only screen and (max-width: 736px) {
+  .otpInputStyle {
+    width: 25px !important;
+    height: 25px !important;
+  }
+}

@@ -1,0 +1,29 @@
+section::before {
+  content: "";
+  height: 400px;
+  width: 100%;
+  position: absolute;
+  background-color: #3c95d1;
+  transform: skewY(-3deg);
+  top: -5%;
+  z-index: -1;
+
+  /* Gradient */
+  background-image: linear-gradient(
+    to right,
+    #b1a8b9,
+    #a49fc5,
+    #9a9acf,
+    #8b95dd,
+    #8b95dd,
+    #82aef2,
+    #82aef2,
+    #8f9bee,
+    #a08ee5,
+    #b28dd5,
+    #c59bbe,
+    #d4aea8,
+    #deba99,
+    #e4c191
+  );
+}

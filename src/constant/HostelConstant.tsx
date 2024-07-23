@@ -1,0 +1,7 @@
+export const FETCH_START = "FETCH_START";
+export const FETCH_SUCCESS = "FETCH_SUCCESS";
+export const FETCH_FAIL = "SET_OTP";
+export const ADD_HOSTEL_START = "ADD_HOSTEL_START";
+export const ADD_HOSTEL_SUCCESS = "ADD_HOSTEL_SUCCESS";
+export const ADD_HOSTEL_FAIL = "ADD_HOSTEL_FAIL";
+export const SET_HOSTEL_DATA = "SET_HOSTEL_DATA";
