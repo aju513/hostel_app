@@ -21,14 +21,14 @@ interface UserContextType {
   setIsLoggedIn?: any;
 }
 
-const initialState = {
-  isLoading: false,
-  formData: {
-    name: "",
-    phone: "",
-    profile: null,
-  },
-};
+// const initialState = {
+//   isLoading: false,
+//   formData: {
+//     name: "",
+//     phone: "",
+//     profile: null,
+//   },
+// };
 
 export const UserContext = createContext<UserContextType | undefined>({
   user: {},

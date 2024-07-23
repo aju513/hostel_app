@@ -10,7 +10,7 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "predeploye": "npm run build",
-    "deploye": "gh-pages d build"
+    "deploye": "gh-pages -d build"
   },
   "dependencies": {
     "@types/react-toastify": "^4.1.0",

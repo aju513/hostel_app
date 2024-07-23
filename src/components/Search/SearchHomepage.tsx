@@ -1,4 +1,3 @@
-import React from "react";
 import { IoSearch } from "react-icons/io5";
 import filter from "../../assets/search/filter.png";
 import { Link } from "react-router-dom";

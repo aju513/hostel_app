@@ -1,15 +1,6 @@
-import footerImg from "../assets/footer.png";
 import { BsFacebook, BsTwitterX, BsInstagram, BsYoutube } from "react-icons/bs";
 
-import {
-  BiArrowFromLeft,
-  BiArrowFromRight,
-  BiLeftArrow,
-  BiRightArrow,
-} from "react-icons/bi";
-import { FcLeft, FcRight } from "react-icons/fc";
-import background from "../assets/footer/background.png";
-import { CgArrowLeft, CgArrowRight } from "react-icons/cg";
+import {  CgArrowRight } from "react-icons/cg";
 import logo from "../assets/logo.png";
 const Footer = () => {
   return (

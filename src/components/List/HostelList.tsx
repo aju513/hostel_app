@@ -4,7 +4,6 @@ import Slider from "react-slick";
 import { SliderCard } from "../Card/Card";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
 import "./hostellist.css";
 interface hostel {
   title: string;
@@ -18,23 +17,7 @@ interface Hostelistprops {
   hostels: hostel[];
 }
 const HostelList: React.FC<Hostelistprops> = ({ hostels, title }) => {
-  const SamplePrevArrow = (props) => {
-    const { className, style, onClick } = props;
-    return (
-      <div onClick={onClick} className={`arrow ${className}`}>
-        <AiOutlineArrowLeft className="arrows" style={{ color: "white" }} />
-      </div>
-    );
-  };
 
-  function SampleNextArrow(props) {
-    const { className, style, onClick } = props;
-    return (
-      <div onClick={onClick} className={`arrow ${className}`}>
-        <AiOutlineArrowRight className="arrows" style={{ color: "white" }} />
-      </div>
-    );
-  }
   var settings = {
     dots: false,
     infinite: true,

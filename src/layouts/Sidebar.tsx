@@ -1,9 +1,8 @@
-import { BookMarked, BookmarkIcon, HomeIcon } from "lucide-react";
-import React, { useState } from "react";
-import { BiHome } from "react-icons/bi";
+import { BookmarkIcon, HomeIcon } from "lucide-react";
+import { useState } from "react";
 
 const Sidebar = () => {
-  const [selected, setSelected] = useState<boolean>(true);
+  const selected = useState<boolean>(true);
   return (
     <div className="bg-[#ffffff] w-[200px] h-[600px] box-shadow m-1 rounded-md">
       <div className="w-[80%] m-auto">

@@ -1,7 +1,7 @@
 import React, { ReactNode } from "react";
 import Footer from "./Footer";
 import Header from "./Header";
-import { ToastContainer, toast } from "react-toastify";
+import { ToastContainer } from "react-toastify";
 import "./layout.css";
 interface LayoutProps {
   children: ReactNode;

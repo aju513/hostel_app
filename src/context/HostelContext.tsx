@@ -1,8 +1,7 @@
-import { createContext, useEffect, useReducer } from "react";
-import PropTypes from "prop-types";
-import { toast } from "react-toastify";
+import { createContext, useReducer } from "react";
+
 import { url } from "../Statistic";
-import getUserFromCookie from "../utils/getUserFromCookie";
+
 import * as actionTypes from "../constant/HostelConstant";
 import Axios from "axios";
 
@@ -114,7 +113,7 @@ function HostelProvider({ children }: HostelProviderProps) {
           withCredentials: true,
         }
       );
-      //   console.log(response);
+        console.log(response);
     } catch (error) {
       dispatch({ type: actionTypes.ADD_HOSTEL_FAIL });
       console.log(error);

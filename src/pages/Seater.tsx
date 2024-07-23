@@ -1,11 +1,8 @@
-import React from "react";
 import Layout from "../layouts/Layout";
 import img1 from "../assets/seater/Rectangle 20.png";
 import img2 from "../assets/seater/Rectangle 34.png";
 import img3 from "../assets/seater/Rectangle 35.png";
 import img4 from "../assets/seater/Rectangle 36.png";
-import { FcWiFiLogo } from "react-icons/fc";
-import { WiFire } from "react-icons/wi";
 import { BiWifi } from "react-icons/bi";
 import { MdBalcony, MdBathroom } from "react-icons/md";
 import { GiWashingMachine } from "react-icons/gi";

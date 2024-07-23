@@ -1,26 +1,19 @@
-import React, {
-  FC,
-  FormEventHandler,
-  useCallback,
-  useEffect,
-  useState,
-} from "react";
-import { DropzoneOptions, useDropzone } from "react-dropzone";
-import { useForm, useFormContext } from "react-hook-form";
+import { useEffect } from "react";
+import { useDropzone } from "react-dropzone";
 
 const FileInput = (props: any) => {
   const { name, label = name } = props;
   // const [input, setInput] = useState();
-  const handleFileChange = (e) => {
-    let file = e.target.files[0];
-    let reader = new FileReader();
-    console.log(e.target.files);
-    reader.onloadend = () => {
-      console.log(reader.result, "msg");
-      // setInput((prev) => ({ photo: reader.result }));
-    };
-    reader.readAsDataURL(file);
-  };
+  // const handleFileChange = (e) => {
+  //   let file = e.target.files[0];
+  //   let reader = new FileReader();
+  //   console.log(e.target.files);
+  //   reader.onloadend = () => {
+  //     console.log(reader.result, "msg");
+  //     // setInput((prev) => ({ photo: reader.result }));
+  //   };
+  //   reader.readAsDataURL(file);
+  // };
 
   const { getRootProps, getInputProps, isDragActive, acceptedFiles } =
     useDropzone({ multiple: false });

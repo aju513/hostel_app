@@ -1,7 +1,7 @@
-import React, { useContext, useEffect } from "react";
+import { useContext, useEffect } from "react";
 
 import VendorInputField from "../../../components/Input/VendorInputField";
-import { SubmitHandler, useForm } from "react-hook-form";
+import { useForm } from "react-hook-form";
 
 import VendorTextArea from "../../../components/Input/VendorTextArea";
 import Layout from "../../../layouts/Layout";
@@ -25,13 +25,13 @@ interface FormData {
   veg: boolean;
 }
 const AddHostel = () => {
-  const { formData, SubmitHostelData, dispatch } = useContext(HostelContext);
+  const { SubmitHostelData, dispatch } = useContext(HostelContext);
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm<FormData>();
-  const onSubmit = (data) => {
+  const onSubmit = (data: any) => {
     dispatch({ type: actiontypes.SET_HOSTEL_DATA, payload: data });
     SubmitHostelData();
   };

@@ -1,7 +1,7 @@
 import Nav from "../components/Navbar/Nav";
 import Footer from "../layouts/Footer";
-import { Button, Input } from "../components";
-import { useState, ChangeEvent, FormEvent, useContext, useEffect } from "react";
+import { Button } from "../components";
+import { useContext } from "react";
 import "./login.css";
 import OtpInput from "react-otp-input";
 import { AuthContext } from "../context/AuthContext";

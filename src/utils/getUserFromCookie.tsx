@@ -1,6 +1,6 @@
 import { toast } from "react-toastify";
 
-export default function getUserFromCookie(cookieName) {
+export default function getUserFromCookie(cookieName: any) {
   const cookie = document.cookie
     .split(";")
     .find((cookie) => cookie.trim().startsWith(`${cookieName}=`));

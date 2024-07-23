@@ -1,8 +1,6 @@
-import React, { useState } from "react";
 import VendorInputField from "../../../components/Input/VendorInputField";
-import { Controller, useFieldArray, useForm } from "react-hook-form";
-import Layout from "../../../layouts/Layout";
-import { CrossIcon, DeleteIcon, HelpCircle, PlusIcon } from "lucide-react";
+import { useFieldArray, useForm } from "react-hook-form";
+import {  PlusIcon } from "lucide-react";
 import { MdDelete } from "react-icons/md";
 import FileInput from "../../../components/Input/VendorFileInput";
 
@@ -12,9 +10,6 @@ const AddRoom = () => {
     handleSubmit,
     formState: { errors },
     control,
-    unregister,
-    setValue,
-    watch,
   } = useForm();
   const { fields, append, remove } = useFieldArray({
     control,

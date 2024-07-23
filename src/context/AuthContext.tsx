@@ -6,7 +6,6 @@ import * as actionTypes from "../constant/AuthConstant";
 import { url } from "../Statistic";
 import validateEmail from "../utils/validateEmail";
 import getUserFromCookie from "../utils/getUserFromCookie";
-import { AlertTriangle } from "lucide-react";
 
 type AuthState = {
   hashed_otp: string;
@@ -40,8 +39,8 @@ const initialState: AuthState = {
   role: actionTypes.User,
   vendor: true,
   dispatch: () => {},
-  RequestOTP: (email: string) => {},
-  HandleRole: (role: string) => {},
+  RequestOTP: () => {},
+  HandleRole: () => {},
   ToggleBusiness: () => {},
   Logout: () => {},
   SubmitOTP: () => {},

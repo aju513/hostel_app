@@ -1,15 +1,7 @@
 import React, { useState } from "react";
 import hostel from "../../assets/hostel.jpeg";
-import bookmarkImage from "../../assets/bookmark.png";
 import bookMarkIcon from "../../assets/bookMark.jpg";
-import {
-  BiBookmark,
-  BiBookmarks,
-  BiSolidBookmark,
-  BiSolidStar,
-  BiStar,
-} from "react-icons/bi";
-import { LuBookMarked } from "react-icons/lu";
+import { BiSolidBookmark, BiSolidStar } from "react-icons/bi";
 import { Link } from "react-router-dom";
 
 interface CardProps {
@@ -17,21 +9,13 @@ interface CardProps {
   starCount?: number;
   address?: string;
   price?: number[];
-  room?: number[];
+  room?: number[] | undefined;
   category?: string[];
   profession?: string;
 }
 
-const HostelSearchCard: React.FC<CardProps> = ({
-  title,
-  starCount,
-  address,
-  price,
-  room,
-  category,
-  profession,
-}) => {
-  const [showBookMark, setShowBookMark] = useState(false);
+const HostelSearchCard: React.FC<CardProps> = ({ title, address }) => {
+  const showBookMark = false;
   return (
     <div className="block lg:flex bg-[#d9d9d9] rounded-lg font-light mt-7 relative">
       <img
@@ -55,7 +39,7 @@ const HostelSearchCard: React.FC<CardProps> = ({
         <p className="">{address}</p>
         <p className="text-xl">
           Room Available:{" "}
-          <span className="font-medium">{`${room[0]} Seater, ${room[1]} Seater`}</span>
+          {/* <span className="font-medium">{`${room[0]} Seater, ${room[1]} Seater`}</span> */}
         </p>
         <p className="text-xl">
           Categories : <span className="font-medium">Men/Women</span>
@@ -77,15 +61,7 @@ const HostelSearchCard: React.FC<CardProps> = ({
   );
 };
 
-const SliderCard: React.FC<CardProps> = ({
-  title,
-  starCount,
-  address,
-  room,
-  category,
-  profession,
-  price,
-}) => {
+const SliderCard: React.FC<CardProps> = ({ title, starCount, address }) => {
   const [showBookMark, setShowBookMark] = useState(false);
   return (
     <div className="my-4">

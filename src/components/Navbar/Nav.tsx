@@ -1,14 +1,11 @@
 import { useState, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
 import "./Nav.css";
-import logo from "../../assets/logo.png";
 import onlylogo from "../../assets/onlylogo.png";
 import logo3 from "../../assets/logo3.png";
 import { IoSearch } from "react-icons/io5";
 import { CgProfile } from "react-icons/cg";
-import { UserContext } from "../../context/UserContext";
-import axios from "axios";
-import { toast } from "react-toastify";
+
 import getUserFromCookie from "../../utils/getUserFromCookie";
 import { AuthContext } from "../../context/AuthContext";
 const Nav = () => {

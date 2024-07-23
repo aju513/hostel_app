@@ -1,4 +1,3 @@
-import { useState, useEffect } from "react";
 import Layout from "../layouts/Layout";
 import Select from "../components/Select/Select";
 import { HostelSearchCard, SliderCard } from "../components/Card/Card";

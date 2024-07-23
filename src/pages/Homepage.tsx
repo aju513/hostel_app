@@ -2,14 +2,7 @@ import Select from "../components/Select/Select";
 
 import Layout from "../layouts/Layout";
 import Slider from "../components/Slider/Slider";
-import { SliderCard } from "../components/Card/Card";
 
-import {
-  BiArrowFromLeft,
-  BiArrowToLeft,
-  BiLeftArrowAlt,
-  BiRightArrowAlt,
-} from "react-icons/bi";
 import HostelList from "../components/List/HostelList";
 import icon_ion from "../assets/homepage/Vector.png";
 import Platform from "../components/Home/Platform";

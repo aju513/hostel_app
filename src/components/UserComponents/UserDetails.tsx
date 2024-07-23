@@ -1,9 +1,7 @@
-import { useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
 import { MdOutlineFileUpload } from "react-icons/md";
 import { useForm } from "react-hook-form";
 import { useState } from "react";
-import { UserProfileContext } from "../../context/UserProfileContext";
 
 interface FormData {
   email: string;
@@ -42,19 +40,19 @@ const UserDetails: React.FC = () => {
 
     // call API here
   };
-  const userDetials = () => {
-    const {
-      isLoading,
-      state: { formData },
-      submitUserProfile,
-      fetchProfile,
-      updateFormData,
-    } = useContext(UserProfileContext);
+  // const userDetials = () => {
+  //   const {
+  //     isLoading,
+  //     state: { formData },
+  //     submitUserProfile,
+  //     fetchProfile,
+  //     updateFormData,
+  //   } = useContext(UserProfileContext);
 
-    useEffect(() => {
-      fetchProfile();
-    }, []);
-  };
+  //   useEffect(() => {
+  //     fetchProfile();
+  //   }, []);
+  // };
 
   return (
     <div className="w-[60rem]">
